@@ -1,5 +1,5 @@
 :root {
-    --background: rgba(179, 255, 251, 0.85);  /* blueish - rgba(97, 147, 255, 0.85) */ /* lightgreen - rgba(0, 255, 213, 0.85) / bluegreen -rgba(153, 255, 246, 0.85) */ 
+    --background: rgba(179, 255, 251, 0.85);
     --bs-body-color: #212529;
     --key-color: #ff6347;
     --key-color-2: #c7faf4;
