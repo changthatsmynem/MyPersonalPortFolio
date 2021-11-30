@@ -1,0 +1,212 @@
+/*
+font-family: 'Kanit', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Poppins', sans-serif;
+font-family: 'Bai Jamjuree', sans-serif;
+font-family: 'Source Sans Pro', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+*/
+:root {
+    --background: rgba(153, 255, 246, 0.85);  /* blueish - rgba(97, 147, 255, 0.85) */ /* lightgreen - rgba(0, 255, 213, 0.85) */
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0;
+    text-align: left;
+}
+
+/***************************************** NAVIGATION BAR CUSTOM **************************************/
+
+header {
+    background: var(--background);
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    z-index: 999;
+}
+
+.navbar-host a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+}
+.navbar-host:hover {
+    text-shadow: 2px 2px 2px black;
+}
+
+nav {
+    background: rgba(222, 249, 255, 0.95);
+    top: 100%;
+    left: 0%;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 550;
+    text-align: left;
+    position: absolute;
+    width: 100%;
+    transform: scale(1, 0);
+    transform-origin: top;
+    -webkit-transition: transform 400ms ease-in-out;
+    -moz-transition: transform 400ms ease-in-out;
+    -o-transition: transform 400ms ease-in-out;
+}
+nav ul {
+    font-size: 20px;
+    list-style-type: none;
+}
+nav a {
+    color: rgb(105, 105, 105);
+    text-decoration: none;
+    opacity: 0;
+    -webkit-transition: opacity 150ms ease-in-out;
+    -moz-transition: opacity 150ms ease-in-out;
+    -o-transition: opacity 150ms ease-in-out;
+}
+nav li {
+    margin-bottom: 0.5em;
+    margin-left: 0.5em;
+    text-transform: uppercase;
+}
+nav a:hover {
+    color: tomato;
+}
+
+li:visited {
+    color: rgb(105, 105, 105);
+}
+.contact {
+    border-top: 2px solid white;
+}
+
+.nav-icon {
+    display: inline-block;
+    margin-right: 1em;
+    width: 1.1em;
+    color: rgba(105, 105, 105, .5);
+}
+    
+.toggle-bar:checked ~ nav {
+    cursor: pointer;
+    transform: scale(1, 1);
+}
+.toggle-bar:checked ~ nav a {
+    opacity: 1;
+    -webkit-transition: opacity 200ms ease-in-out 200ms;
+    -moz-transition: opacity 200ms ease-in-out 200ms;
+    -o-transition: opacity 200ms ease-in-out 200ms;
+}
+
+.toggle-bar {
+    display: none;
+}
+
+.toggle-bar-label {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    margin-left: 1em;
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.toggle-bar-label span,
+.toggle-bar-label span::before,
+.toggle-bar-label span::after {
+    display: block;
+    background: white;
+    height: 2px;
+    width: 30px;
+    border-radius: 50%;
+    position: relative;
+}
+.toggle-bar-label span::before,
+.toggle-bar-label span::after {
+    content: "";
+    display: block;
+    background: white;
+    height: 2px;
+    width: 30px;
+    border-radius: 50%;
+    position: absolute;
+}
+.toggle-bar-label span::before {
+    top: 7px;
+}
+.toggle-bar-label span::after {
+    bottom: 7px;
+}
+.toggle-bar-label span:hover,
+.toggle-bar-label span:hover::before,
+.toggle-bar-label span:hover::after {
+    cursor: pointer;
+    box-shadow: -1px 1px 4px 1px grey;
+}
+
+/***** ALL DEVICES STYLE ******/
+@media all and (min-width: 768px) {
+    .toggle-bar-label {
+        display: none;
+    }
+    header {
+        display: grid;
+        grid-template-columns: 3fr auto minmax(800px, 3fr) 1fr;
+    }
+    .navbar-host a{
+        grid-column: 3 / span 1;
+    }
+    nav {
+        all: unset;
+        grid-column: 2 / 4;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    nav li {
+        margin-left: 35px;
+        margin-bottom: 0;
+    }
+    nav a {
+        color: white;
+        opacity: 1;
+        position: relative;
+    }
+    #contact-link {
+        border: none;
+        display: flex;
+        align-items: center;
+    }
+    .nav-icon {
+        color:tomato;
+    }
+    nav a::before {
+        content: "";
+        display: block;
+        background: tomato;
+        position: absolute;
+        height: 3px;
+        bottom: -0.25em;
+        left: 0;
+        right: 0;
+        transform: scale(0, 1);
+        -webkit-transition: transform ease-in-out 250ms;
+        -moz-transition: transform ease-in-out 250ms;
+        -o-transition: transform ease-in-out 250ms;
+    }
+    nav a:hover::before {
+        transform: scale(1, 1);
+    }
+}
