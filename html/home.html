@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!--shrink-to-fit=no-->
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@200;600&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;500;600&family=Kanit:wght@200;600&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;500;600&family=Kanit:wght@200;600&family=Source+Sans+Pro:wght@200;300;400;600;700&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200;300;500;600&family=Kanit:wght@200;600&family=Nunito+Sans:wght@200;300;400;600;700;800;900&family=Source+Sans+Pro:wght@200;300;400;600;700&family=Ubuntu:wght@300;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="../css/home.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <title>
+            ChangBlog
+        </title>
+        <link rel="shortcut icon" href="../img/chang logo prototype00.ico">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <!--ICON FROM FONTAWESOME-->
+        <script src="https://kit.fontawesome.com/ab083448f5.js" crossorigin="anonymous"></script>
+    </head>
+        <!--<header>
+            <h1 class="navbar-host host-border"><a href="#">Chang's <span class="navbar-host" style="color: tomato; text-indent: 20px;">Blog</span></a></h1>
+            <input type="checkbox" id="toggle-bar" class="toggle-bar">
+            <nav>
+                <ul class="nav-item">
+                    <li class="items"><a href="#"><i class="fas fa-home nav-icon"></i>Home</a></li>
+                    <li class="items"><a href="#"><i class="fas fa-address-card nav-icon"></i>About</a></li>
+                    <li class="items"><a href="#"><i class="fas fa-file nav-icon"></i>Resume</a></li>
+                    <li class="items"><a href="#"><i class="fas fa-project-diagram nav-icon"></i>Projects</a></li>
+                    <li class="items contact" id="contact-link"><a href="#"><i class="fas fa-envelope nav-icon"></i>Contact</a></li>
+                </ul>
+            </nav>
+            <label for="toggle-bar" class="toggle-bar-label"><span></span></label>
+        </header>-->
+        <body class="navbar-padding">
+            <div class="fixed-top">
+                <nav class="navbar navbar-expand-md disable-warp navbar-compact">
+                    <div class="container">
+                        <div class="nav-item navbar-main mr-3 active">
+                            <!--h1 class="navbar-host"-->
+                            <a class="navbar-brand" href="home.html" style="color: white;">Chang's <span
+                                    style="color: tomato;">Blog</span></a>
+                        </div>
+                        <!--input type="checkbox" id="toggle-bar" class="toggle-bar"-->
+                        <div class="nav-item">
+                            <button href="#" class="navbar-toggler nav-button" data-bs-toggle="collapse" data-bs-target="#navbar-menu"
+                                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"
+                                style="color: white;">
+                                Menu
+                                <!-- <span class="navbar-toggler-icon"></span> -->
+                            </button>
+                        </div>
+                        <div id="navbar-menu" class="collapse navbar-collapse">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
+                                            class="bi bi-emoji-dizzy" viewBox="0 0 17 17">
+                                            <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z" />
+                                            <path
+                                                d="M9.146 5.146a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708.708l-.647.646.647.646a.5.5 0 0 1-.708.708l-.646-.647-.646.647a.5.5 0 1 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 0-.708zm-5 0a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 1 1 .708.708l-.647.646.647.646a.5.5 0 1 1-.708.708L5.5 7.207l-.646.647a.5.5 0 1 1-.708-.708l.647-.646-.647-.646a.5.5 0 0 1 0-.708zM10 11a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+                                        </svg>
+                                        About
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
+                                        class="bi bi-chat-left-text" viewBox="0 0 17 17">
+                                            <path
+                                                d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1h12zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z" />
+                                            <path
+                                                d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zM3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6zm0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5z" />
+                                        </svg>
+                                        Contents
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
+                                            class="bi bi-boxes" viewBox="0 0 17 17">
+                                            <path fill-rule="evenodd"
+                                                d="M7.752.066a.5.5 0 0 1 .496 0l3.75 2.143a.5.5 0 0 1 .252.434v3.995l3.498 2A.5.5 0 0 1 16 9.07v4.286a.5.5 0 0 1-.252.434l-3.75 2.143a.5.5 0 0 1-.496 0l-3.502-2-3.502 2.001a.5.5 0 0 1-.496 0l-3.75-2.143A.5.5 0 0 1 0 13.357V9.071a.5.5 0 0 1 .252-.434L3.75 6.638V2.643a.5.5 0 0 1 .252-.434L7.752.066ZM4.25 7.504 1.508 9.071l2.742 1.567 2.742-1.567L4.25 7.504ZM7.5 9.933l-2.75 1.571v3.134l2.75-1.571V9.933Zm1 3.134 2.75 1.571v-3.134L8.5 9.933v3.134Zm.508-3.996 2.742 1.567 2.742-1.567-2.742-1.567-2.742 1.567Zm2.242-2.433V3.504L8.5 5.076V8.21l2.75-1.572ZM7.5 8.21V5.076L4.75 3.504v3.134L7.5 8.21ZM5.258 2.643 8 4.21l2.742-1.567L8 1.076 5.258 2.643ZM15 9.933l-2.75 1.571v3.134L15 13.067V9.933ZM3.75 14.638v-3.134L1 9.933v3.134l2.75 1.571Z" />
+                                        </svg>
+                                        Projects
+                                    </a>
+                                </li>
+                                <li class="nav-item ">
+                                    <a class="nav-link" href="resume.html">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor"
+                                            class="bi bi-file-earmark-arrow-down" viewBox="0 0 17 17">
+                                            <path
+                                                d="M8.5 6.5a.5.5 0 0 0-1 0v3.793L6.354 9.146a.5.5 0 1 0-.708.708l2 2a.5.5 0 0 0 .708 0l2-2a.5.5 0 0 0-.708-.708L8.5 10.293V6.5z" />
+                                            <path
+                                                d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1h5.5v2z" />
+                                        </svg>
+                                        Resume
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--label for="toggle-bar" class="toggle-bar-label"><span></span></label-->
+                    </div>
+                </nav>
+            </div>
+        <main class="home-main">
+            <section>
+                <div>
+                    <div class="wrapper">
+                        <h3 class="author">Nathapab<span style="color: brown;">'CHANG'</span>Jirasaweksil</h3>
+                    </div>
+                    <h2 class="side-header">Personal Blog For Sharing My Trek</h2>
+                    <div class="content-home">
+                        <div class="content-square medium blog-contents" style="font-size: 25px; text-align: center; color: red;">BLOG CONTENTS</div>
+                        <div class="content-square large myself" style="font-size: 25px; text-align: center; color: red;">ABOUT THIS DUDE</div>
+                        <div class="content-square medium" style="font-size: 25px; text-align: center; color: red;">FEATURED ARTICLES</div>
+                        <div class="content-square small" style="font-size: 25px; text-align: center; color: red;">CONTACT</div>
+                        <div class="content-square tall" style="font-size: 25px; text-align: center; color: red;">PROJECTS</div>
+                        <div class="content-square wide" style="font-size: 25px; text-align: center; color: red;">RESUME</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer text-muted">
+            <div class="container-fluid">
+                <div class="row pb-3 pt-2">
+                    <div class="col-sm-4 text-left">
+                        Nathapab 'Chang' Jirasaweksil<br>
+                        <i class="fas fa-envelope fa-fw mr-2"></i> changhippappa@gmail.com<br>
+                        <!-- <i class="fas fa-phone fa-fw mr-2"></i> 086.780.2042 (TH; +66) -->
+                    </div>
+                    <div class="col-sm-8 text-right">Coded from scratch with HTML, CSS, Bootstrap, &amp; JS</div>
+                </div>
+            </div>	
+        </footer>
+
+        <script src="/js/chang.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    </body>
+</html>
